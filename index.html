@@ -7,16 +7,22 @@
       a {
         color: blue;
       }
-      li {
-        border: 1px solid red;
+      #exec-bio {
+        background-color: lightgray;
       }
-      div {
+      .bio-box {
         border: 1px solid black;
       }
-      div a {
+      .bio-box a {
         color: green;
       }
-    </style>
+      .ms-box {
+        background-color: azure;
+      }
+      #revenant {
+        background-color: orange;
+      }
+   </style>
   </head>
   <body>
     <h1>I'm an h1</h1>
@@ -24,7 +30,7 @@
       <li>
         <a href="http://example.com/">Link</a>
       </li>
-      <li>
+      <li id="revenant">
         <a href="http://example.com/">Link</a>
       </li>
       <li>
@@ -32,16 +38,16 @@
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div>
+    <div id="exec-bio" class="bio-box ms-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box ms-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box ms-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box ms-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
   </body>
