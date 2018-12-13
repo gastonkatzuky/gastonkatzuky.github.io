@@ -22,14 +22,19 @@
 
       .full-hero {
         background-color: #c7dbfc;
-        height: 50vw;
-        width: 75vw;
+        display: inline;
       }
 
       /* SOCIAL STYLES */
       .social-link {
         background: rgba(150, 150, 150, 0.5);
         color: blue;
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+      }
+      .show {
+        display: block;
       }
     
       /* BIO STYLES */
@@ -47,6 +52,23 @@
       .bio-copy a {
         color: green;
       }
+    
+    /* TESTING STYLES */
+      .test-box {
+        background: #9db6dd;
+        margin: 50px;
+        width: 200px;
+      }
+      .test-box-nosizing {
+        border: 10px solid #000;
+        padding: 40px;
+      }
+      .test-box-sizing {
+        box-sizing: border-box;
+        top margin: 100px;
+        width: auto;
+      }
+     
     </style>
  </head>
   <body>
@@ -57,7 +79,7 @@
           <a href="http://example.com/" class="social-link">Link</a>
         </li>
         <li>
-          <a href="http://example.com/" class="social-link">Link</a>
+          <a href="http://example.com/" class="social-link show">Link</a>
         </li>
         <li>
           <a href="http://example.com/" class="social-link">Link</a>
@@ -65,6 +87,15 @@
       </ul>
     </div>
     <h2>I'm an h2</h2>
+    <div class="test-box">
+      200px wide
+    </div>
+    <div class="test-box test-box-nosizing">
+      200px wide + border + padding = 300px
+    </div>
+    <div class="test-box test-box-nosizing test-box-sizing">
+      200px wide + border + padding + box-sizing: border-box = 200px
+    </div>
     <div class="bio-wrapper">
       <div class="bio-box">
         <h3>Michael Hartl</h3>
